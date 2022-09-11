@@ -26,6 +26,8 @@ public class EmployeePayrollService {
         list.add(new EmployeePayroll(12,"xyz",25000));
 
         fileIO.writeDataToFile(list);
+        fileIO.printData();
+        System.out.println("File entries : "+ fileIO.countEntries());
 
     }
 
