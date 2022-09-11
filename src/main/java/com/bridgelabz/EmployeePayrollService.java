@@ -1,6 +1,7 @@
 package com.bridgelabz;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class EmployeePayrollService {
@@ -15,8 +16,17 @@ public class EmployeePayrollService {
         System.out.println("Employee payroll service program");
 
         EmployeePayrollService employeePayrollService = new EmployeePayrollService();
-        employeePayrollService.readEmployeePayrollData();
-        employeePayrollService.writeEmployeePayrollData();
+        //employeePayrollService.readEmployeePayrollData();
+        //employeePayrollService.writeEmployeePayrollData();
+
+        EmployeePayrollFileIOService fileIO = new EmployeePayrollFileIOService();
+        List<EmployeePayroll> list = new ArrayList<>();
+        list.add(new EmployeePayroll(10,"abc",10000));
+        list.add(new EmployeePayroll(11,"def",20000));
+        list.add(new EmployeePayroll(12,"xyz",25000));
+
+        fileIO.writeDataToFile(list);
+
     }
 
     public void readEmployeePayrollData(){

@@ -1,0 +1,3 @@
+EmployeePayroll{id=10, name='abc', salary=10000.0}
+EmployeePayroll{id=11, name='def', salary=20000.0}
+EmployeePayroll{id=12, name='xyz', salary=25000.0}
